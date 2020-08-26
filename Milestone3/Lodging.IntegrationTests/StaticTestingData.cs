@@ -150,7 +150,6 @@ namespace Lodging.IntegrationTests
         {
           Id = 1,
           Name = "Quiet Forest Lodge",
-          Description = "A quiet lodge with a nearby forest. Great for outdoor activities.",
           Location = new LocationModel()
           {
             Address = new AddressModel()
@@ -161,147 +160,37 @@ namespace Lodging.IntegrationTests
               StateProvince = "CO",
               Street = "30500 Co Rd 383",
             },
-            Latitude = 0,
-            Longitude = 0,
-          },
-          Amenities = new List<AmenityModel>()
-          {
-            new AmenityModel() { Amenity = "Wifi" },
-            new AmenityModel() { Amenity = "Coffee" },
-            new AmenityModel() { Amenity = "Pool" },
-          },
-          Images = new List<ImageModel>()
-          {
-            new ImageModel() { Image = "https://p3lodging.blob.core.windows.net/p3lodging/seed/lodge-12.jpg" },
-            new ImageModel() { Image = "https://p3lodging.blob.core.windows.net/p3lodging/seed/cabin-01.jpg" },
-            new ImageModel() { Image = "https://p3lodging.blob.core.windows.net/p3lodging/seed/cabin-02.jpg" },
-            new ImageModel() { Image = "https://p3lodging.blob.core.windows.net/p3lodging/seed/cabin-03.jpg" },
-            new ImageModel() { Image = "https://p3lodging.blob.core.windows.net/p3lodging/seed/cabin-04.jpg" },
-            new ImageModel() { Image = "https://p3lodging.blob.core.windows.net/p3lodging/seed/cabin-05.jpg" },
-            new ImageModel() { Image = "https://p3lodging.blob.core.windows.net/p3lodging/seed/cabin-06.jpg" },
+            Latitude = "0",
+            Longitude = "0",
           },
           Rentals = new List<RentalModel>()
           {
             new RentalModel() {
-              RentalUnit = new RentalUnitModel()
-              {
-                Name = "Rental Unit 1",
-                Description = "Unit for rent",
-                Occupancy = 3,
-                RentalUnitType = "Rental unit",
-                Bedrooms = new List<BedroomModel>()
-                {
-                  new BedroomModel() {
-                    BedType = new BedTypeModel() { BedType = "King" },
-                    BedCount = 2,
-                    RoomNumber = "100",
-                    Amenities = new List<AmenityModel>() {
-                      new AmenityModel() { Amenity = "Coffee" },
-                      new AmenityModel() { Amenity = "Wifi" },
-                      new AmenityModel() { Amenity = "Pool" },
-                    },
-                    Images = new List<ImageModel>() {
-                      new ImageModel() { Image = "https://p3lodging.blob.core.windows.net/p3lodging/square/cabin-05-square.jpg" },
-                    }
-                  },
-                  new BedroomModel() {
-                    BedType = new BedTypeModel() { BedType = "King" },
-                    BedCount = 2,
-                    RoomNumber = "101",
-                    Amenities = new List<AmenityModel>() {
-                      new AmenityModel() { Amenity = "Coffee" },
-                      new AmenityModel() { Amenity = "Wifi" },
-                      new AmenityModel() { Amenity = "Pool" },
-                    },
-                    Images = new List<ImageModel>() {
-                      new ImageModel() { Image = "https://p3lodging.blob.core.windows.net/p3lodging/square/cabin-06-square.jpg" },
-                    }
-                  }
-                },
-                Bathrooms = new List<BathroomModel>() {
-                  new BathroomModel() { Fixture = 1 },
-                  new BathroomModel() { Fixture = 2 },
-                },
-              },
+              Id = 1,
+              Name = "Rental Unit 1",
+              Occupancy = 1,
+              Type = "Cabin",
+              Status = "Booked",
+              Price = 0.0,
+              LodgingId = 1
             },
             new RentalModel() {
-              RentalUnit = new RentalUnitModel() {
-                Name = "Rental Unit 2",
-                Description = "Unit for rent",
-                Occupancy = 3,
-                RentalUnitType = "Rental unit",
-                Bedrooms = new List<BedroomModel>() {
-                  new BedroomModel() {
-                    BedType = new BedTypeModel() { BedType = "Queen" },
-                    BedCount = 2,
-                    RoomNumber = "200",
-                    Amenities = new List<AmenityModel>() {
-                      new AmenityModel() { Amenity = "Coffee" },
-                      new AmenityModel() { Amenity = "Wifi" },
-                      new AmenityModel() { Amenity = "Pool" },
-                    },
-                    Images = new List<ImageModel>() {
-                      new ImageModel() { Image = "https://p3lodging.blob.core.windows.net/p3lodging/square/cabin-01-square.jpg" },
-                    }
-                  },
-                  new BedroomModel() {
-                    BedType = new BedTypeModel() { BedType = "King" },
-                    BedCount = 2,
-                    RoomNumber = "201",
-                    Amenities = new List<AmenityModel>() {
-                      new AmenityModel() { Amenity = "Coffee" },
-                      new AmenityModel() { Amenity = "Wifi" },
-                      new AmenityModel() { Amenity = "Pool" },
-                    },
-                    Images = new List<ImageModel>() {
-                      new ImageModel() { Image = "https://p3lodging.blob.core.windows.net/p3lodging/square/cabin-03-square.jpg" },
-                    }
-                  }
-                },
-                Bathrooms = new List<BathroomModel>() {
-                  new BathroomModel() { Fixture = 1 },
-                  new BathroomModel() { Fixture = 2 },
-                },
-              },
+              Id = 2,
+              Name = "Rental Unit 2",
+              Occupancy = 1,
+              Type = "RV",
+              Status = "Available",
+              Price = 0.0,
+              LodgingId = 1
             },
             new RentalModel() {
-              RentalUnit = new RentalUnitModel() {
-                Name = "Rental Unit 3",
-                Description = "Unit for rent",
-                Occupancy = 3,
-                RentalUnitType = "Rental unit",
-                Bedrooms = new List<BedroomModel>() {
-                  new BedroomModel() {
-                    BedType = new BedTypeModel() { BedType = "King" },
-                    BedCount = 1,
-                    RoomNumber = "201",
-                    Amenities = new List<AmenityModel>() {
-                      new AmenityModel() { Amenity = "Coffee" },
-                      new AmenityModel() { Amenity = "Wifi" },
-                      new AmenityModel() { Amenity = "Pool" },
-                    },
-                    Images = new List<ImageModel>() {
-                      new ImageModel() { Image = "https://p3lodging.blob.core.windows.net/p3lodging/square/cabin-02-square.jpg" },
-                    }
-                  },
-                  new BedroomModel() {
-                    BedType = new BedTypeModel() { BedType = "Queen" },
-                    BedCount = 2,
-                    RoomNumber = "202",
-                    Amenities = new List<AmenityModel>() {
-                      new AmenityModel() { Amenity = "Coffee" },
-                      new AmenityModel() { Amenity = "Pool" },
-                    },
-                    Images = new List<ImageModel>() {
-                      new ImageModel() { Image = "https://p3lodging.blob.core.windows.net/p3lodging/square/cabin-04-square.jpg" },
-                    }
-                  }
-                },
-                Bathrooms = new List<BathroomModel>() {
-                  new BathroomModel() { Fixture = 1 },
-                  new BathroomModel() { Fixture = 2 },
-                },
-              },
+              Id = 3,
+              Name = "Rental Unit 3",
+              Occupancy = 1,
+              Type = "Cabin",
+              Status = "Available",
+              Price = 0.0,
+              LodgingId = 1
             }
           },
           Reviews = new List<ReviewModel>() {
@@ -321,7 +210,7 @@ namespace Lodging.IntegrationTests
               AccountId = 3,
               Comment = "The nearby forest is great.",
               DateCreated = DateTime.Now,
-              Rating = 8.5,
+              Rating = 8,
             },
             new ReviewModel() {
               AccountId = 4,
@@ -332,6 +221,6 @@ namespace Lodging.IntegrationTests
           }
         }) }
       };
-        }
+      }
     }
 }
