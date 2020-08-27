@@ -10,6 +10,7 @@ using System;
 using System.Linq;
 using Lodging.WebAPI;
 using Microsoft.Extensions.Hosting;
+using Lodging.DataAccess.Seed;
 using System.Reflection;
 
 namespace Lodging.IntegrationTests
