@@ -14,7 +14,7 @@ namespace Lodging.DataAccess.Seed
             if (context.Reviews.Count() > 0) return;
 
             var lodging1 = new LodgingModel() {
-                Id = 1,
+                Id = 10,
                 Location = new LocationModel()
                 {
                     Id = 1,
@@ -40,7 +40,7 @@ namespace Lodging.DataAccess.Seed
                     {
                         Id =1,
                         Name= "Shady Valley",
-                        LodgingId =1,
+                        LodgingId =10,
                         Occupancy= 4,
                         Price = 1000,
                         Status= "available",
@@ -51,7 +51,7 @@ namespace Lodging.DataAccess.Seed
                     {
                         Id =2,
                         Name= "Sacred Waterfalls camping",
-                        LodgingId =2,
+                        LodgingId =10,
                         Occupancy= 3,
                         Price = 200,
                         Status= "available",
@@ -62,7 +62,7 @@ namespace Lodging.DataAccess.Seed
                     {
                         Id =2,
                         Name= "Honey Moon reservation",
-                        LodgingId =3,
+                        LodgingId =10,
                         Occupancy= 2,
                         Price = 400,
                         Status= "occupied",
@@ -114,7 +114,7 @@ namespace Lodging.DataAccess.Seed
             };
             var lodging2 = new LodgingModel()
             {
-                Id = 2,
+                Id = 11,
                 Location = new LocationModel()
                 {
                     Id = 4,
@@ -181,7 +181,7 @@ namespace Lodging.DataAccess.Seed
                         Id= 1,
                         AccountId = 1,
                         Comment = "Astounding! Would highly reccomend to fellow campers.",
-                        LodgingId = 4,
+                        LodgingId = 11,
                         Rating = 5,
                         DateCreated = DateTime.Now,
 
@@ -191,7 +191,7 @@ namespace Lodging.DataAccess.Seed
                         Id= 2,
                         AccountId = 1,
                         Comment = "staff was rude",
-                        LodgingId = 4,
+                        LodgingId = 11,
                         Rating = 1,
                         DateCreated = DateTime.Now,
 
@@ -201,7 +201,7 @@ namespace Lodging.DataAccess.Seed
                         Id= 3,
                         AccountId = 2,
                         Comment = "Average. Good for large families. ",
-                        LodgingId = 4,
+                        LodgingId = 11,
                         Rating = 3,
                         DateCreated = DateTime.Now,
 
@@ -212,7 +212,7 @@ namespace Lodging.DataAccess.Seed
             };
             var lodging3 = new LodgingModel()
             {
-                Id = 5,
+                Id = 13,
                 Location = new LocationModel()
                 {
                     Id = 3,
@@ -238,7 +238,7 @@ namespace Lodging.DataAccess.Seed
                     {
                         Id =1,
                         Name= "Presidental suite",
-                        LodgingId =5,
+                        LodgingId =13,
                         Occupancy= 15,
                         Price = 30000,
                         Status= "booked",
@@ -249,7 +249,7 @@ namespace Lodging.DataAccess.Seed
                     {
                         Id =2,
                         Name= "outback campground",
-                        LodgingId =5,
+                        LodgingId =13,
                         Occupancy= 3,
                         Price = 100,
                         Status= "available",
@@ -260,7 +260,7 @@ namespace Lodging.DataAccess.Seed
                     {
                         Id =3,
                         Name= "Honey Moon reservation",
-                        LodgingId =5,
+                        LodgingId =13,
                         Occupancy= 2,
                         Price = 2000,
                         Status= "occupied",

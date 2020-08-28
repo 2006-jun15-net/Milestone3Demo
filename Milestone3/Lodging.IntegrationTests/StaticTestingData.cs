@@ -18,16 +18,16 @@ namespace Lodging.IntegrationTests
         private const int RandomStringLength = 5;
 
         // Root to be prepended to each url request
-        public static string root = "api/v0.0/";
+        public static string root = "api/";
 
         //Dep for fake data
         private static Fixture _fixture = new Fixture();
         //Routes for the app
         public static List<string> Routes = new List<string>()
     {
-      "review",
-      "lodging",
-      "rental"
+      "Review",
+      "Lodging",
+      "Rental"
     };
         /*
          * <summary>
@@ -143,10 +143,10 @@ namespace Lodging.IntegrationTests
             _fixture.Behaviors.Remove(new ThrowingRecursionBehavior());
             _fixture.Behaviors.Add(new OmitOnRecursionBehavior());
             return new List<object[]>
-      {
-        new object[] { "/api/v0.0/review", JObject.FromObject(_fixture.Create<ReviewModel>()) },
-        new object[] { "/api/v0.0/rental", JObject.FromObject(_fixture.Create<RentalModel>()) },
-        new object[] { "/api/v0.0/lodging", JObject.FromObject(new LodgingModel()
+       {
+        new object[] { "/api/Review", JObject.FromObject(_fixture.Create<ReviewModel>()) },
+        new object[] { "/api/Rental", JObject.FromObject(_fixture.Create<RentalModel>()) },
+        new object[] { "/api/Lodging", JObject.FromObject(new LodgingModel()
         {
           Id = 1,
           Name = "Quiet Forest Lodge",
@@ -221,6 +221,7 @@ namespace Lodging.IntegrationTests
           }
         }) }
       };
-      }
+        }
     }
 }
+
